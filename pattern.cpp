@@ -2,19 +2,26 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    int i = 1;
-    
-    while (i <=n ){
 
-        int j = 1;
-        while (j <= n){
+    int num;
+    cin >> num;
+
+    int row = 1;
+    while(row<=num){
+        int col = 1;
+        while (col <= num){
             cout << "*";
-            j = j + 1;
+            col++;
         }
         cout << endl;
-    i = i + 1;
+        row++;
     }
-    return 0;
+    
+    for (row; row <= num; row++){
+        for(int col = 1; col <= num; col++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
 }
