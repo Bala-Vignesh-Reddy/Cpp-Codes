@@ -3,9 +3,10 @@ using namespace std;
 
 /* Number pattern que
 if input is 4 then output is 
-123
-456
-789
+4321
+4321
+4321
+4321
 */
 int main() {
     int n;
@@ -13,12 +14,10 @@ int main() {
 
 // While loop code
     int row = 1;
-    int val = 1;
     while(row <= n){
         int col = 1;
         while (col <= n){
-            cout << val;
-            val++;
+            cout << n - col + 1;
             col++;
         }
         cout << endl;
@@ -26,23 +25,10 @@ int main() {
     }
     
    //For loop Code
-    
-    int val = 1;
     for (int row = 1; row <= n; row++){
         for (int col = 1; col <= n; col++){
-            cout << val;
-            val++;
+            cout << n - col + 1;
         }
         cout << endl;
-    }
-
-    //Tavish Logic
-    int a1 = n * n;
-    int b ;
-    for (int row = 1; row <= n; row++){
-        for(int col = 1; col <= a1; col = col + b){    
-            cout << col;
-        }
-        cout << endl;        
     }
 }

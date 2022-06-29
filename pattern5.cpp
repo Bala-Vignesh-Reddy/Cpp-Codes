@@ -1,23 +1,39 @@
+
 #include<iostream>
 using namespace std;
 
+/* Star pattern que
+if input is 4 then output is 
+*
+* *
+* * *
+* * * *
+*/
 int main() {
-    
     int n;
     cin >> n;
+    int row = 1;
 
-    int  i = 1;
+// While loop code
 
-    while(i<=n){
 
-        int j = 1;
-        while(j<=n){
-
-            cout << j ;
-            j++
+    while(row <= n){
+        int col = 1;
+        while (col <= row){
+            cout << "*" << " ";
+            col++;
         }
         cout << endl;
-        i++ 
-    }   
+        row++;
+    }
+    
+   //For loop Code
+    
+    for (int row = 1; row <= n; row++){
+        for (int col = 1; col <= row; col++){
+            cout << "*" << " ";
+        }
+        cout << endl;
+    }
 
 }

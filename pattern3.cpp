@@ -1,25 +1,32 @@
 #include<iostream>
 using namespace std;
+/*Number pattern Question
+1234
+1234
+1234
+1234*/
 
 int main() {
     int n;
     cin >> n;
-    int i = 1;
-    int count = 1;
-
-    while (i <= n){
-        int j = 1;
-        
-        while (j <= n) {
-           // cout << n - j + 1;  // FOR REVERSE 4321
-            //cout << j;         // FOR 1234
-            cout << count << " ";
-            count = count + 1;
-            j = j + 1;
+    
+//    While loop code
+    int row = 1;
+    while(row <= n){
+        int col = 1;
+        while (col <= n){
+            cout << col ;
+            col++;
         }
         cout << endl;
-        i = i + 1;
+        row++;
     }
-    return 0;
-}
 
+    //For loop code
+    for (int row = 1; row <= n; row++){
+        for (int col = 1; col <= n; col++){
+            cout << col;
+        }
+        cout << endl;
+    }   
+}
