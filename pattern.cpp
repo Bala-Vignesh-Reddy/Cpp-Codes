@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
-
+/* pattern of this question is
+if input is 3
+***
+***
+***
+*/
 int main() {
 
     int num;

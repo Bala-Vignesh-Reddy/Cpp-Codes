@@ -1,6 +1,12 @@
 #include<iostream>
 using namespace std;
-
+/*Pattern of this question is
+if input is 3
+then output is 
+111
+222
+333
+*/
 int main() {
     int n;
     cin >> n;
